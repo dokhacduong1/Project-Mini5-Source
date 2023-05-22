@@ -2,7 +2,13 @@
 import { Post, Get, Del, Patch } from "../utils/request"
 import {getCookie} from "../helpers/cookie"
 export const createAnswer = async (options)=>{
-  const result = await Post(`answers`,options);
+  let result = "ok";
+  try{
+    result = await Post(`answers`,options);
+  }catch{
+    result ="ok"
+  }
+  
   return result;
 }
 

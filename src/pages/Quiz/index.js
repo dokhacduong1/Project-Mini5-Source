@@ -38,12 +38,14 @@ function Quiz() {
             answers: arrayNewData
         };
        
-
-      const result = await createAnswer(opitions);
-      if(result){
-        navigate(`/result/${result.id}`);
+        const result = await createAnswer(opitions);
+       console.log(result)
+      
+      if(result === "ok"){
+        navigate(`/answers`);
+        //navigate(`/answers/${result.id}`);
       }
-
+      
     }
 
     return (
