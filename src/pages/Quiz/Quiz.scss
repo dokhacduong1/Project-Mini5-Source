@@ -1,0 +1,12 @@
+.quiz{
+    &__form{
+        &-questions{
+            display: flex;
+            flex-direction: column;
+        }
+        &-button{
+            background-color: orange !important;
+        }
+    }
+    
+}

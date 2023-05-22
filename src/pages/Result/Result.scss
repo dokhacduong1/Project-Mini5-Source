@@ -1,0 +1,42 @@
+.result{
+    &__form{
+        &-header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                padding: 0 10px;
+                font-weight: 700;
+            }
+        }
+        &-questions{
+            display: flex;
+            flex-direction: column;
+        }
+        &-button{
+            background-color: orange !important;
+            &:hover{
+                color:orange !important;
+                border-color: rgb(247, 2, 2) !important;
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+    &__true{
+        border-radius: 3px;
+        background-color: greenyellow;
+    }
+    &__false{
+        border-radius: 3px;
+        background-color: red;
+    }
+    &__checktrue{
+        color: green !important;
+    }
+    &__checkfalse{
+        color: red;
+    }
+    
+}

@@ -1,0 +1,18 @@
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__form{
+        &-input{
+            &:hover{
+                border-color: orange !important;
+            }
+            &:focus{
+                border-color: orange !important;
+            }
+        }
+        &-button{
+            background-color: orange !important;
+        }
+       }
+}

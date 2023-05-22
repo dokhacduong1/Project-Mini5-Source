@@ -1,0 +1,9 @@
+.topics{
+    text-align: center;
+    &__button{
+        &:hover,&:focus{
+            color: orange !important;
+            border-color: orange !important;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.home{
+    &__welcome{
+       text-align: center !important;
+    }
+    &__button{
+        margin: 0px 10px;
+        &:active , &:hover{
+            color: orange !important;
+            border-color: orange !important;
+        }
+    }
+}

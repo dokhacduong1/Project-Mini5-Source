@@ -1,0 +1,43 @@
+.header{
+    background: orange;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        font-size: 28px;
+        font-weight: 700;
+    
+        a {
+          color: #fff;
+        }
+      }
+      &__menu ,&__account{
+        a{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 5px 15px;
+            &.active{
+                background: #FF5722;
+                border-radius: 5px;
+            }
+        }
+      }
+      &__bar{
+        display: none;
+      }
+}
+@media (max-width: 992.9px) {
+  .header {
+    &__bar{
+      display: block;
+    }
+    &__account{
+      display: none;
+    }
+    &__menu{
+      display: none;
+    }
+  }
+}
